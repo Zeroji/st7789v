@@ -11,7 +11,7 @@ with RaspberryPi() as rpi:
     display = Display(rpi)
     for mirrored in (False, True):
         for rotation in (0, 90, 180, 270):
-            display.initialize(rotation=rotation, mirror=mirrored)
+            display.initialize(rotation=rotation, mirrored=mirrored)
             display.draw_rgb_bytes(black * 240 * 320)
             row = line + black * 80 if display.max_w == 320 else line
             display.draw_rgb_bytes(row * 64)

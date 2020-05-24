@@ -1,7 +1,11 @@
-from . import IOWrapper
+"""Dummy implementation of IOWrapper."""
 import logging
+from .io_wrapper import IOWrapper
+
 
 class Dummy(IOWrapper):
+    """Dummy IO wrapper."""
+
     def __init__(self, logger='dummy_io', handler=None, **kwargs):
         super().__init__(**kwargs)
         self._pin_map = {self.bl: 'BL', self.dc: 'DC', self.cs: 'CD', self.rst: 'RST'}
@@ -12,16 +16,18 @@ class Dummy(IOWrapper):
         else:
             console = logging.StreamHandler()
             console.setLevel(logging.DEBUG)
-            console.setFormatter(logging.Formatter('%(asctime)s:%(name)s:%(levelname)s\t%(message)s'))
+            console.setFormatter(logging.Formatter(
+                '%(asctime)s:%(name)s:%(levelname)s\t%(message)s'))
             self.log.addHandler(console)
         self.log.info('Initialized')
 
     def set_pin(self, pin: int, state: bool):
-        self.log.debug('Set pin %s %s', self._pin_map.get(pin, str(pin)), 'high' if state else 'low')
-    
+        self.log.debug('Set pin %s %s', self._pin_map.get(
+            pin, str(pin)), 'high' if state else 'low')
+
     def set_pin_pwm(self, pin: int, value: float):
         self.log.debug('Set pin %s to %f', self._pin_map.get(pin, str(pin)), value)
-    
+
     def spi_write(self, data: bytes):
         self.log.debug('Send data: %s', data.hex())
 

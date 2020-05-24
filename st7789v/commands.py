@@ -1,3 +1,6 @@
+"""List of Table 1 commands for ST7789V chip."""
+
+#pylint: disable=C0326
 commands = [
     # (ID, NAME,        W, R, "DESC")
     (0x01, 'SWRESET',   0, 0, "Software Reset"),
@@ -20,7 +23,7 @@ commands = [
     (0x29, 'DISPON',    0, 0, "Display On"),
     (0x2A, 'CASET',     4, 0, "Column Address Set"),  # uint16 * 2
     (0x2B, 'RASET',     4, 0, "Row Address Set"),  # uint16 * 2
-    (0x2C, 'RAMWR',    -1, 0, "Memory Write"),  # Not cleared on SW/HW reset, resets col/row registers
+    (0x2C, 'RAMWR',    -1, 0, "Memory Write"),  # Not cleared on SW/HW reset, resets col/row
     (0x2E, 'RAWRD',     0,-1, "Memory Read"),  # Resets col/row registers, fixed 18-bit
     (0x30, 'PTLAR',     4, 0, "Partial Area"),  # uint16 * 2
     (0x33, 'VSCRDEF',   6, 0, "Vertical Scrolling Definition"),  # uint16 * 3

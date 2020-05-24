@@ -1,8 +1,11 @@
+"""Raspberry Pi implementation of generic IOWrapper."""
 import RPi.GPIO as GPIO
 import spidev
-from . import IOWrapper
+from .io_wrapper import IOWrapper
+
 
 class RaspberryPi(IOWrapper):
+    """RaspberryPi GPIO/SPI wrapper."""
     PWM_FREQ = 100
 
     def __init__(self, spi_bus=0, gpio_mode=GPIO.BCM, **kwargs):
