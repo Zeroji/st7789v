@@ -1,3 +1,4 @@
+"""Provide a quick REPL environment for ST7789V display."""
 import atexit
 from st7789v.interface import RaspberryPi
 from st7789v import BufferedDisplay

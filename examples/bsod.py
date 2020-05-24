@@ -1,3 +1,4 @@
+"""Display a simple blue screen."""
 from st7789v.interface import RaspberryPi
 from st7789v import Display
 

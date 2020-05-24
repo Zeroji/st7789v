@@ -1,3 +1,4 @@
+"""Display all possible rotation/mirroring combinations."""
 import time
 from st7789v.interface import RaspberryPi
 from st7789v import Display

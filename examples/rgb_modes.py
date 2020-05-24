@@ -1,3 +1,4 @@
+"""Demonstrate the quality difference between RGB modes."""
 from st7789v.interface import RaspberryPi
 from st7789v import Display
 

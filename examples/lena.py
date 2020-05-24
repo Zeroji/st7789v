@@ -1,3 +1,4 @@
+"""Display the Lena picture in 3 color modes."""
 import time
 from PIL import Image
 from st7789v.interface import RaspberryPi

@@ -1,3 +1,4 @@
+"""Turn the display and backlight off and back on."""
 import time
 from st7789v.interface import RaspberryPi
 from st7789v import Display

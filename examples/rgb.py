@@ -1,8 +1,9 @@
+"""Display all possible colors in RGB 5-6-5 mode."""
 from st7789v.interface import RaspberryPi
 from st7789v import Display
 
 data = [(0, 0, 0)] * 320 * 240
-full = [(255,0,0), (255,255,0), (0,255,0), (0,255,255), (0,0,255), (255,0,255)]
+full = [(255, 0, 0), (255, 255, 0), (0, 255, 0), (0, 255, 255), (0, 0, 255), (255, 0, 255)]
 
 for y in range(240):
     for x in range(320):
