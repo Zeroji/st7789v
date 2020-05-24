@@ -4,7 +4,7 @@ with open('README.md', 'r') as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="st7789v-Zeroji",
+    name="st7789v",
     version="0.1.0",
     author="Zeroji",
     author_email="zzeroji@gmail.com",
@@ -14,7 +14,7 @@ setuptools.setup(
     url="https://github.com/Zeroji/st7789v",
     packages=setuptools.find_packages(),
     classifiers=[
-        "Development Status :: 1 - Planning",
+        "Development Status :: 3 - Alpha",
         "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
         "Operating System :: POSIX :: Linux",
         "Programming Language :: Python :: 3",

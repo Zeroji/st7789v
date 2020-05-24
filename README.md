@@ -61,7 +61,7 @@ display.initialize(rotation=270)
 
 This has the side effect of changing the screen size from 240x320 to 320x240.
 
-See `examples/` for more information.
+See [`examples/`](./examples) for more information.
 
 ## Buffered display usage
 
@@ -88,7 +88,7 @@ with RaspberryPi() as rpi:
     display.update_partial(0, 0, 320, 120)
 ```
 
-See `examples/` for more information.
+See [`examples/`](./examples) for more information.
 
 ## OpenCV usage
 
