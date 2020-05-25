@@ -1,5 +1,9 @@
 # ST7789V Display Controller
 
+![pypi status](https://img.shields.io/pypi/status/st7789v)
+![pypi version](https://img.shields.io/pypi/v/st7789v?label=version)
+![pypi license](https://img.shields.io/pypi/l/st7789v)
+
 A controller for the [ST7789V][spec] display, built to control
 a [2-inch LCD Module][2inch] from a Raspberry Pi or similar.
 
